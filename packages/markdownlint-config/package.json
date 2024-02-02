@@ -1,0 +1,26 @@
+{
+  "name": "fe-markdownlint-config",
+  "version": "1.0.0",
+  "description": "front-end encode markdownlint config",
+  "main": "index.js",
+  "keywords": [ 
+    "front-end",
+    "encode",
+    "markdown",
+    "lint"
+  ],
+  "files": [],
+  "author": "brookzsw",
+  "homepage": "https://github.com/BrookZhao/frontend-spec#readme",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrookZhao/frontend-spec.git"
+  },
+  "bugs": {
+    "url": "https://github.com/BrookZhao/frontend-spec/issues"
+  },
+  "peerDependencies": {
+    "markdownlint": "^0.33.0"
+  }
+}
