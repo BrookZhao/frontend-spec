@@ -1,6 +1,6 @@
 {
   "name": "fe-encode-lint",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "description": "frontend encode engineering cli",
   "bin": "./lib/cli.js",
   "main": "./lib/index.js",
@@ -9,8 +9,7 @@
     "build": "rm -rf lib && npm run copyfiles && tsc",
     "copyfiles": "copyfiles -a -u 1 \"src/config/**\" lib",
     "test": "npm run build && jest",
-    "coverage": "nyc jest --silent --forceExit",
-    "prepublishOnly": "npm run test"
+    "coverage": "nyc jest --silent --forceExit"
   },
   "files": [
     "lib/"
