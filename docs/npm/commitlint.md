@@ -1,5 +1,5 @@
 ---
-title: fe-commitlint-config
+title: @encodefe/commitlint-config
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/BrookZhao/frontend-spec
 ---
 
-## fe-commitlint-config
+## @encodefe/commitlint-config
 
 :::tip
 Front-end Git 规范
@@ -22,7 +22,7 @@ Front-end Git 规范
 使用时，需要安装 [@commitlint/cli](https://www.npmjs.com/package/@commitlint/cli)：
 
 ```bash
-npm install fe-commitlint-config @commitlint/cli --save-dev
+npm install @encodefe/commitlint-config @commitlint/cli --save-dev
 ```
 
 ### 使用
@@ -31,7 +31,7 @@ npm install fe-commitlint-config @commitlint/cli --save-dev
 
 ```javascript
 module.exports = {
-  extends: ['fe-commitlint-config'],
+  extends: ['@encodefe/commitlint-config'],
 };
 ```
 

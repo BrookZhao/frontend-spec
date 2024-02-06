@@ -1,5 +1,5 @@
 ---
-title: fe-markdownlint-config
+title: @encodefe/markdownlint-config
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/BrookZhao/frontend-spec
 ---
 
-## fe-markdownlint-config
+## @encodefe/markdownlint-config
 
 :::tip
 Front-end 文档 规范
@@ -22,7 +22,7 @@ Front-end 文档 规范
 需要先行安装 [markdownlint](https://www.npmjs.com/package/markdownlint)：
 
 ```bash
-npm install fe-markdownlint-config markdownlint --save-dev
+npm install @encodefe/markdownlint-config markdownlint --save-dev
 ```
 
 ### 使用
@@ -31,6 +31,6 @@ npm install fe-markdownlint-config markdownlint --save-dev
 
 ```json
 {
-  "extends": "fe-markdownlint-config"
+  "extends": "@encodefe/markdownlint-config"
 }
 ```

@@ -45,7 +45,7 @@ export interface ScanOptions {
   fix?: boolean;
   // 生成报告文件
   outputReport?: boolean;
-  // scan 时指定 fe-encode-lint config，优先级高于 fe-encode-lint.config.js
+  // scan 时指定 @encodefe/encode-lint config，优先级高于 @encodefe/encode-lint.config.js
   config?: Config;
 }
 
@@ -74,7 +74,7 @@ export interface ScanReport {
 
 export interface InitOptions {
   cwd: string;
-  // 是否检查并升级 fe-encode-lint 的版本
+  // 是否检查并升级 @encodefe/encode-lint 的版本
   checkVersionUpdate: boolean;
   // 是否需要自动重写 lint 配置
   rewriteConfig?: boolean;

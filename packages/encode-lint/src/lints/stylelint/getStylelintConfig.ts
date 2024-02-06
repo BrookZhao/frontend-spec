@@ -25,7 +25,7 @@ export function getStylelintConfig(opts: ScanOptions, pkg: PKG, config: Config):
     const lintConfigFiles = glob.sync('.stylelintrc?(.@(js|yaml|yml|json))', { cwd });
     if (lintConfigFiles.length === 0 && !pkg.stylelint) {
       lintConfig.config = {
-        extends: 'fe-stylelint-config',
+        extends: '@encodefe/stylelint-config',
       };
     }
 

@@ -1,8 +1,10 @@
 {
-  "name": "fe-encode-lint",
-  "version": "1.0.0",
+  "name": "@encodefe/encode-lint",
+  "version": "1.0.3",
   "description": "frontend encode engineering cli",
-  "bin": "./lib/cli.js",
+  "bin": {
+    "encode-lint": "lib/cli.js"
+  },
   "main": "./lib/index.js",
   "scripts": {
     "dev": "npm run copyfiles && tsc -w",
@@ -51,10 +53,10 @@
     "commander": "^6.2.1",
     "cross-spawn": "^7.0.3",
     "ejs": "^3.1.5",
-    "fe-commitlint-config": "workspace:^",
-    "fe-eslint-config": "workspace:^",
-    "fe-markdownlint-config": "workspace:^",
-    "fe-stylelint-config": "workspace:^",
+    "@encodefe/commitlint-config": "workspace:^",
+    "@encodefe/eslint-config": "workspace:^",
+    "@encodefe/markdownlint-config": "workspace:^",
+    "@encodefe/stylelint-config": "workspace:^",
     "eslint": "^8.7.0",
     "eslint-config-egg": "^10.0.0",
     "eslint-config-prettier": "^8.3.0",
@@ -93,5 +95,14 @@
   },
   "bugs": {
     "url": "https://github.com/BrookZhao/frontend-spec/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "types": "./lib/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "test"
   }
 }

@@ -1,5 +1,5 @@
 ---
-title: fe-eslint-plugin
+title: @encodefe/eslint-plugin
 categories:
   - 工程规范
 tags:
@@ -9,12 +9,12 @@ author:
   link: https://github.com/BrookZhao/frontend-spec
 ---
 
-## fe-eslint-plugin
+## @encodefe/eslint-plugin
 
 除了本包，你需要同时安装 [ESlint](https://eslint.org/)
 
 ```shell
-$ npm install fe-eslint-plugin eslint --save-dev
+$ npm install @encodefe/eslint-plugin eslint --save-dev
 ```
 
 ### 使用
@@ -24,9 +24,9 @@ $ npm install fe-eslint-plugin eslint --save-dev
 ```js
 // .eslintrc.js
 module.exports = {
-  plugin: ['fe-eslint-config'],
+  plugin: ['@encodefe/eslint-config'],
   rules: {
-    'fe-eslint-plugin/no-secret-info': 'error',
+    '@encodefe/eslint-plugin/no-secret-info': 'error',
   },
 };
 ```
@@ -36,7 +36,7 @@ module.exports = {
 ```js
 // .eslintrc.js
 module.exports = {
-  extends: 'plugin:fe-eslint-plugin/recommended',
+  extends: 'plugin:@encodefe/eslint-plugin/recommended',
 };
 ```
 

@@ -1,6 +1,6 @@
 {
-  "name": "fe-stylelint-config",
-  "version": "1.0.0",
+  "name": "@encodefe/stylelint-config",
+  "version": "1.0.3",
   "description": "Front-end CSS规范",
   "main": "index.js",
   "keywords": [
@@ -29,5 +29,9 @@
   },
   "bugs": {
     "url": "https://github.com/BrookZhao/frontend-spec/issues"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

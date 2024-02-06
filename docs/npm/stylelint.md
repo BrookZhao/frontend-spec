@@ -1,5 +1,5 @@
 ---
-title: fe-stylelint-config
+title: @encodefe/stylelint-config
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/BrookZhao/frontend-spec
 ---
 
-## fe-stylelint-config
+## @encodefe/stylelint-config
 
 :::tip
 Front-end CSS 规范
@@ -22,7 +22,7 @@ Front-end CSS 规范
 需要先行安装 [stylelint](https://www.npmjs.com/package/stylelint) 和 [stylelint-scss](https://www.npmjs.com/package/stylelint-scss)：
 
 ```bash
-npm install fe-stylelint-config stylelint stylelint-scss --save-dev
+npm install @encodefe/stylelint-config stylelint stylelint-scss --save-dev
 ```
 
 ### 使用
@@ -31,6 +31,6 @@ npm install fe-stylelint-config stylelint stylelint-scss --save-dev
 
 ```json
 {
-  "extends": "fe-stylelint-config"
+  "extends": "@encodefe/stylelint-config"
 }
 ```

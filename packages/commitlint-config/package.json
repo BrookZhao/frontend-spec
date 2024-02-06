@@ -1,9 +1,9 @@
 {
-  "name": "fe-commitlint-config",
-  "version": "1.0.0",
+  "name": "@encodefe/commitlint-config",
+  "version": "1.0.3",
   "description": "front-end encode commitlint config",
   "main": "index.js",
-  "keywords": [ 
+  "keywords": [
     "front-end",
     "encode",
     "commit",
@@ -22,5 +22,12 @@
   },
   "devDependencies": {
     "conventional-changelog-conventionalcommits": "^4.5.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }

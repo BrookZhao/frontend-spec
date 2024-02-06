@@ -1,7 +1,7 @@
 {
-  "name": "fe-encode-lint-init-test",
+  "name": "@encodefe/encode-lint-init-test",
   "version": "1.0.0",
-  "description": "fe-encode-lint init test",
+  "description": "@encodefe/encode-lint init test",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

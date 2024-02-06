@@ -8,7 +8,7 @@ ruleTester.run('no-broad-semantic-versioning', rule, {
     {
       filename: 'package.json',
       code: `module.exports = ${JSON.stringify({
-        devDependencies: { 'fe-eslint-plugin': '^0.0.5' },
+        devDependencies: { '@encodefe/eslint-plugin': '^0.0.5' },
       })}`,
     },
     {
@@ -21,11 +21,11 @@ ruleTester.run('no-broad-semantic-versioning', rule, {
     {
       filename: 'package.json',
       code: `module.exports = ${JSON.stringify({
-        devDependencies: { 'fe-eslint-plugin': '*' },
+        devDependencies: { '@encodefe/eslint-plugin': '*' },
       })}`,
       errors: [
         {
-          message: 'The "fe-eslint-plugin" is not recommended to use "*"',
+          message: 'The "@encodefe/eslint-plugin" is not recommended to use "*"',
         },
       ],
     },

@@ -1,4 +1,4 @@
-# fe-markdownlint-config
+# @encodefe/markdownlint-config
 
 > Front-end 文档 规范
 
@@ -9,7 +9,7 @@
 需要先行安装 [markdownlint](https://www.npmjs.com/package/markdownlint)：
 
 ```bash
-npm install fe-markdownlint-config markdownlint --save-dev
+npm install @encodefe/markdownlint-config markdownlint --save-dev
 ```
 
 ## 使用
@@ -18,6 +18,6 @@ npm install fe-markdownlint-config markdownlint --save-dev
 
 ```json
 {
-  "extends": "fe-markdownlint-config"
+  "extends": "@encodefe/markdownlint-config"
 }
 ```
