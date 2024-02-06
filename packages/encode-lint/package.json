@@ -1,6 +1,6 @@
 {
   "name": "@encodefe/encode-lint",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "frontend encode engineering cli",
   "bin": {
     "encode-lint": "lib/cli.js"
@@ -53,10 +53,10 @@
     "commander": "^6.2.1",
     "cross-spawn": "^7.0.3",
     "ejs": "^3.1.5",
-    "@encodefe/commitlint-config": "workspace:^",
-    "@encodefe/eslint-config": "workspace:^",
-    "@encodefe/markdownlint-config": "workspace:^",
-    "@encodefe/stylelint-config": "workspace:^",
+    "@encodefe/commitlint-config": "^1.0.3",
+    "@encodefe/eslint-config": "^1.0.3",
+    "@encodefe/markdownlint-config": "^1.0.3",
+    "@encodefe/stylelint-config": "^1.0.3",
     "eslint": "^8.7.0",
     "eslint-config-egg": "^10.0.0",
     "eslint-config-prettier": "^8.3.0",
