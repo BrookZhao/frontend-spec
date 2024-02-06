@@ -85,13 +85,13 @@
     "vue-eslint-parser": "^7.3.0"
   },
   "author": "brookzsw",
-  "homepage": "https://github.com/BrookZhao/frontend-spec/fe-spec#readme",
+  "homepage": "https://github.com/BrookZhao/frontend-spec#readme",
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/BrookZhao/frontend-spec/fe-spec.git"
+    "url": "git+https://github.com/BrookZhao/frontend-spec.git"
   },
   "bugs": {
-    "url": "https://github.com/BrookZhao/frontend-spec/fe-spec/issues"
+    "url": "https://github.com/BrookZhao/frontend-spec/issues"
   }
 }

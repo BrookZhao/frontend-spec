@@ -11,14 +11,14 @@ author:
 
 # fe-encode-lint
 
-`fe-encode-lint` 是[前端编码规范工程化](https://brookzhao.github.io/fe-spec/)的配套 Lint 工具，可以为项目一键接入规范、一键扫描和修复规范问题，保障项目的编码规范和代码质量。
+`fe-encode-lint` 是[前端编码规范工程化](前端编码规范工程化 https://brookzhao.github.io/frontend-spec/)的配套 Lint 工具，可以为项目一键接入规范、一键扫描和修复规范问题，保障项目的编码规范和代码质量。
 
 ## 背景
 
 我们引入了多个业界流行的 Linter，并根据规范内容定制了规则包，它们包括：
 
-| 规范                                                              | Lint 工具                                                  | npm 包                                                                                       |
-| ----------------------------------------------------------------- | ---------------------------------------------------------- | -------------------------------------------------------------------------------------------- |
+| 规范                                                              | Lint 工具                                                  | npm 包                                                                         |
+| ----------------------------------------------------------------- | ---------------------------------------------------------- | ------------------------------------------------------------------------------ |
 | JavaScript 编码规范 <br/> TypeScript 编码规范 <br/> Node 编码规范 | [ESLint](https://eslint.org/)                              | [fe-eslint-config](https://www.npmjs.com/package/fe-eslint-config)             |
 | CSS 编码规范                                                      | [stylelint](https://stylelint.io/)                         | [fe-stylelint-config](https://www.npmjs.com/package/fe-stylelint-config)       |
 | Git 规范                                                          | [commitlint](https://commitlint.js.org/#/)                 | [fe-commitlint-config](https://www.npmjs.com/package/fe-commitlint-config)     |
