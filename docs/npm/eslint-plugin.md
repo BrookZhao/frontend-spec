@@ -1,5 +1,5 @@
 ---
-title: @encodefe/eslint-plugin
+title: '@encodefe/eslint-plugin'
 categories:
   - 工程规范
 tags:

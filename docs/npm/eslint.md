@@ -1,5 +1,5 @@
 ---
-title: @encodefe/eslint-config
+title: '@encodefe/eslint-config'
 categories:
   - 工程规范
 tags:

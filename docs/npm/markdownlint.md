@@ -1,5 +1,5 @@
 ---
-title: @encodefe/markdownlint-config
+title: '@encodefe/markdownlint-config'
 categories:
   - 工程规范
 tags:

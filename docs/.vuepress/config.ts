@@ -44,7 +44,7 @@ module.exports = {
       },
       {
         text: '脚手架',
-        items: [{ text: '@encodefe/encode-lint', link: '/cli/@encodefe/encode-lint.md' }],
+        items: [{ text: '@encodefe/encode-lint', link: '/cli/encode-lint.md' }],
       },
     ],
     sidebar: [

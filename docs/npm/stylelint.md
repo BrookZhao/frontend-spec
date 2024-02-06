@@ -1,5 +1,5 @@
 ---
-title: @encodefe/stylelint-config
+title: '@encodefe/stylelint-config'
 categories:
   - 工程规范
 tags:

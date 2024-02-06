@@ -1,5 +1,5 @@
 ---
-title: @encodefe/commitlint-config
+title: '@encodefe/commitlint-config'
 categories:
   - 工程规范
 tags:
