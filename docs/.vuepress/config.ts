@@ -7,7 +7,7 @@ module.exports = {
       description: '前端编码规范工程化',
     },
   },
-  base: '/fe-spec/',
+  base: '/frontend-spec/',
   host: '127.0.0.1',
   port: 8088,
 
