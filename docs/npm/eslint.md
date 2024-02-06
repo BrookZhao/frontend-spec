@@ -1,5 +1,5 @@
 ---
-title: '@encodefe/eslint-config'
+title: 'eslint-config'
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/BrookZhao/frontend-spec
 ---
 
-## @encodefe/eslint-config
+## eslint-config
 
 :::tip
 Front-end JavaScript TypeScript Node 规范
@@ -17,7 +17,7 @@ Front-end JavaScript TypeScript Node 规范
 
 提供了多套配置文件以支持 `JavaScript`、`TypeScript`、`React`、`Vue`、`Node.js` 等多种项目类型。
 
-### JavaScript 项目 - @encodefe/eslint-config
+### JavaScript 项目 - eslint-config
 
 针对未使用 `React` 或 `Vue` 的原生 `JavaScript` 项目，使用 `ESLint` 原生规则和 [eslint-plugin-import](https://www.npmjs.com/package/eslint-plugin-import) 规则，使用 [@babel/eslint-parser](https://www.npmjs.com/package/@babel/eslint-parser) 作为 `parser`，是本包的默认配置。
 
@@ -41,7 +41,7 @@ npm i -D @encodefe/eslint-config @babel/core @babel/eslint-parser eslint-plugin-
 }
 ```
 
-### JavaScript + React 项目 - @encodefe/eslint-config/react
+### JavaScript + React 项目 - eslint-config/react
 
 针对 JS React 项目，继承了默认配置，并启用了 [eslint-plugin-react](https://www.npmjs.com/package/eslint-plugin-react) 和 [eslint-plugin-react-hooks](https://www.npmjs.com/package/eslint-plugin-react-hooks) 的规则。
 
@@ -80,7 +80,7 @@ npm i -D eslint-plugin-jsx-a11y
 }
 ```
 
-### JavaScript + Vue 项目 - @encodefe/eslint-config/vue
+### JavaScript + Vue 项目 - eslint-config/vue
 
 针对 `JS Vue` 的项目，继承了默认配置，并启用了 [eslint-plugin-vue](https://www.npmjs.com/package/eslint-plugin-vue) 插件的规则，使用 [vue-eslint-parser](https://www.npmjs.com/package/vue-eslint-parser) 作为 parser。
 
@@ -106,7 +106,7 @@ npm i -D @encodefe/eslint-config @babel/core @babel/eslint-parser eslint-plugin-
 }
 ```
 
-### JavaScript (Node.js) 项目 - @encodefe/eslint-config/node
+### JavaScript (Node.js) 项目 - eslint-config/node
 
 针对 Node.js 项目，继承了默认配置和 [eslint-config-egg 的规则](https://github.com/eggjs/eslint-config-egg/blob/master/lib/rules/node.js)，规则由 ESLint 原生规则和 [eslint-plugin-node](https://github.com/mysticatea/eslint-plugin-node) 提供。
 
@@ -131,7 +131,7 @@ npm i -D @encodefe/eslint-config @babel/core @babel/eslint-parser eslint-plugin-
 }
 ```
 
-### TypeScript 项目 - @encodefe/eslint-config/typescript
+### TypeScript 项目 - eslint-config/typescript
 
 针对未使用 `React` 或 `Vue` 的 `TypeScript` 项目，继承了默认配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
 
@@ -167,7 +167,7 @@ npm i -D @encodefe/eslint-config @typescript-eslint/parser @typescript-eslint/es
 }
 ```
 
-### TypeScript + React 项目 - @encodefe/eslint-config/typescript/react
+### TypeScript + React 项目 - eslint-config/typescript/react
 
 针对 `TS React` 项目，继承了 `JS React` 的配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
 
@@ -207,7 +207,7 @@ npm i -D  eslint-plugin-jsx-a11y
 }
 ```
 
-### TypeScript + Vue 项目 - @encodefe/eslint-config/typescript/vue
+### TypeScript + Vue 项目 - eslint-config/typescript/vue
 
 针对 `TS Vue` 项目，继承了 `JS Vue` 的配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 `parser`。
 
@@ -234,7 +234,7 @@ npm i -D @encodefe/eslint-config @typescript-eslint/parser @typescript-eslint/es
 }
 ```
 
-### TypeScript (Node.js) 项目 - @encodefe/eslint-config/typescript/node
+### TypeScript (Node.js) 项目 - eslint-config/typescript/node
 
 针对未使用 `React` 和 `Vue` 的 `TypeScript(Node)` 项目，继承了 `JS Node.js` 配置，并启用了 [@typescript-eslint/eslint-plugin](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/eslint-plugin) 插件的规则，使用 [@typescript-eslint/parser](https://github.com/typescript-eslint/typescript-eslint/tree/master/packages/parser) 作为 parser。
 
@@ -284,7 +284,7 @@ npm install --save-dev eslint-config-prettier eslint-plugin-prettier
 
 ### 将风格问题降级
 
-为了保证一致的编码风格，本包中大量风格相关的规则被设为了 `error` 级别，以引起开发者的足够重视。如果你觉得风格问题不足以是 `error` 级别（有些用户根据 ESLint error 进行流程卡点），本包还提供了一套名为 'essential' 的配置文件，这套配置将所有风格问题降级为 `warn` 级别，仅将必要问题报告为 `error`，引用方式为在相应配置的 `@encodefe/eslint-config` 后面加上 `/essential`，如对 `JS React` 项目为 `@encodefe/eslint-config/essential/react`、对 `TS Vue` 项目为 `@encodefe/eslint-config/essential/typescript/vue`
+为了保证一致的编码风格，本包中大量风格相关的规则被设为了 `error` 级别，以引起开发者的足够重视。如果你觉得风格问题不足以是 `error` 级别（有些用户根据 ESLint error 进行流程卡点），本包还提供了一套名为 'essential' 的配置文件，这套配置将所有风格问题降级为 `warn` 级别，仅将必要问题报告为 `error`，引用方式为在相应配置的 `eslint-config` 后面加上 `/essential`，如对 `JS React` 项目为 `eslint-config/essential/react`、对 `TS Vue` 项目为 `eslint-config/essential/typescript/vue`
 
 ### 了解更多
 

@@ -1,5 +1,5 @@
 ---
-title: '@encodefe/commitlint-config'
+title: 'commitlint-config'
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/BrookZhao/frontend-spec
 ---
 
-## @encodefe/commitlint-config
+## commitlint-config
 
 :::tip
 Front-end Git 规范

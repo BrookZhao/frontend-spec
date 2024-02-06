@@ -35,16 +35,16 @@ module.exports = {
       {
         text: 'NPM包',
         items: [
-          { text: '@encodefe/eslint-config', link: '/npm/eslint.md' },
-          { text: '@encodefe/stylelint-config', link: '/npm/stylelint.md' },
-          { text: '@encodefe/commitlint-config', link: '/npm/commitlint.md' },
-          { text: '@encodefe/markdownlint-config', link: '/npm/markdownlint.md' },
-          { text: '@encodefe/eslint-plugin', link: '/npm/eslint-plugin.md' },
+          { text: 'eslint-config', link: '/npm/eslint.md' },
+          { text: 'stylelint-config', link: '/npm/stylelint.md' },
+          { text: 'commitlint-config', link: '/npm/commitlint.md' },
+          { text: 'markdownlint-config', link: '/npm/markdownlint.md' },
+          { text: 'eslint-plugin', link: '/npm/eslint-plugin.md' },
         ],
       },
       {
         text: '脚手架',
-        items: [{ text: '@encodefe/encode-lint', link: '/cli/encode-lint.md' }],
+        items: [{ text: 'encode-lint', link: '/cli/encode-lint.md' }],
       },
     ],
     sidebar: [
@@ -93,16 +93,16 @@ module.exports = {
       {
         title: 'NPM包',
         children: [
-          { title: '@encodefe/eslint-config', path: '/npm/eslint.md' },
-          { title: '@encodefe/stylelint-config', path: '/npm/stylelint.md' },
-          { title: '@encodefe/commitlint-config', path: '/npm/commitlint.md' },
-          { title: '@encodefe/markdownlint-config', path: '/npm/markdownlint.md' },
-          { title: '@encodefe/eslint-plugin', path: '/npm/eslint-plugin.md' },
+          { title: 'eslint-config', path: '/npm/eslint.md' },
+          { title: 'stylelint-config', path: '/npm/stylelint.md' },
+          { title: 'commitlint-config', path: '/npm/commitlint.md' },
+          { title: 'markdownlint-config', path: '/npm/markdownlint.md' },
+          { title: 'eslint-plugin', path: '/npm/eslint-plugin.md' },
         ],
       },
       {
         title: '脚手架',
-        children: [{ title: '@encodefe/encode-lint', path: '/cli/@encodefe/encode-lint.md' }],
+        children: [{ title: 'encode-lint', path: '/cli/encode-lint.md' }],
       },
     ],
     logo: '/img/logo.png',

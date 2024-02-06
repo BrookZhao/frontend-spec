@@ -1,5 +1,5 @@
 ---
-title: '@encodefe/eslint-plugin'
+title: 'eslint-plugin'
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/BrookZhao/frontend-spec
 ---
 
-## @encodefe/eslint-plugin
+## eslint-plugin
 
 除了本包，你需要同时安装 [ESlint](https://eslint.org/)
 

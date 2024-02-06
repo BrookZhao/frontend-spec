@@ -1,5 +1,5 @@
 ---
-title: '@encodefe/stylelint-config'
+title: 'stylelint-config'
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/BrookZhao/frontend-spec
 ---
 
-## @encodefe/stylelint-config
+## stylelint-config
 
 :::tip
 Front-end CSS 规范

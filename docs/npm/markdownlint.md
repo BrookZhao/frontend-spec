@@ -1,5 +1,5 @@
 ---
-title: '@encodefe/markdownlint-config'
+title: 'markdownlint-config'
 categories:
   - 工程规范
 tags:
@@ -9,7 +9,7 @@ author:
   link: https://github.com/BrookZhao/frontend-spec
 ---
 
-## @encodefe/markdownlint-config
+## markdownlint-config
 
 :::tip
 Front-end 文档 规范
