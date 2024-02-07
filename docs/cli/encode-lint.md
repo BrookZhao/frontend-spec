@@ -1,5 +1,5 @@
 ---
-title: '@encodefe/encode-lint'
+title: 'encode-lint'
 categories:
   - 脚手架规范
 tags:
@@ -9,9 +9,9 @@ author:
   link: https://github.com/BrookZhao/frontend-spec
 ---
 
-# @encodefe/encode-lint
+# encode-lint
 
-`@encodefe/encode-lint` 是[前端编码规范工程化](前端编码规范工程化 https://brookzhao.github.io/frontend-spec/)的配套 Lint 工具，可以为项目一键接入规范、一键扫描和修复规范问题，保障项目的编码规范和代码质量。
+`encode-lint` 是[前端编码规范工程化](https://brookzhao.github.io/frontend-spec/)的配套 Lint 工具，可以为项目一键接入规范、一键扫描和修复规范问题，保障项目的编码规范和代码质量。
 
 ## 背景
 
@@ -26,7 +26,7 @@ author:
 
 可以看到这些 `Linter` 和规则包众多且零散，全部安装它们会给项目增加十几个依赖，接入和升级成本都比较高。
 
-`@encodefe/encode-lint` 收敛屏蔽了这些依赖和配置细节，提供简单的 CLI 和 Node.js API，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
+`encode-lint` 收敛屏蔽了这些依赖和配置细节，提供简单的 CLI 和 Node.js API，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡口，降低项目接入规范的成本。
 
 ## CLI 使用
 
@@ -76,9 +76,9 @@ npm install @encodefe/encode-lint -g
 - `-i` `--include <dirpath>` 指定要进行规范扫描的目录
 - `--no-ignore` 忽略 eslint 的 ignore 配置文件和 ignore 规则
 
-> 注 1：事实上，你可以在任意目录执行 `encode-lint scan` `@encodefe/encode-lint` 会根据文件类型、JSON 等特征嗅探项目类型。但我们还是推荐在执行过 `@encodefe/encode-lint init` 的项目根目录执行 `@encodefe/encode-lint scan`，以得到最准确的扫描结果。
+> 注 1：事实上，你可以在任意目录执行 `encode-lint scan` `encode-lint` 会根据文件类型、JSON 等特征嗅探项目类型。但我们还是推荐在执行过 `encode-lint init` 的项目根目录执行 `encode-lint scan`，以得到最准确的扫描结果。
 >
-> 注 2: `@encodefe/encode-lint` 会根据项目内有无 eslint 和 stylelint 配置文件判断使用项目的配置文件还是 `@encodefe/encode-lint` 默认配置进行扫描。若使用项目的，在未安装依赖时会帮其安装（执行 npm i）。若使用项目配置扫描失败，则使用默认配置扫描
+> 注 2: `encode-lint` 会根据项目内有无 eslint 和 stylelint 配置文件判断使用项目的配置文件还是 `encode-lint` 默认配置进行扫描。若使用项目的，在未安装依赖时会帮其安装（执行 npm i）。若使用项目配置扫描失败，则使用默认配置扫描
 
 #### `encode-lint fix`：一键修复
 
@@ -156,7 +156,7 @@ config 参数如下：
 
 ## 配置
 
-`@encodefe/encode-lint` 基于一份配置进行扫描（但你也可以零配置使用），支持的配置参数有：
+`encode-lint` 基于一份配置进行扫描（但你也可以零配置使用），支持的配置参数有：
 
 | 参数                | 类型                    | 默认值 | 说明                                                                                           |
 | ------------------- | ----------------------- | ------ | ---------------------------------------------------------------------------------------------- |
@@ -168,7 +168,7 @@ config 参数如下：
 | stylelintOptions    | stylelint.LinterOptions | -      | stylelint 配置项，若未设置将使用执行目录下或内置的默认 stylelintrc 和 stylelintignore 进行扫描 |
 | markdownlintOptions | markdownlint.Options    | -      | markdownlint 配置项，若未设置将使用执行目录下或内置的默认 markdownlint 配置文件进行扫描        |
 
-`@encodefe/encode-lint` 会读取执行目录下的 `encode-lint.config.js` 作为配置文件。`encode-lint init` 会在执行目录下新增如下的 `encode-lint.config.js` 文件：
+`encode-lint` 会读取执行目录下的 `encode-lint.config.js` 作为配置文件。`encode-lint init` 会在执行目录下新增如下的 `encode-lint.config.js` 文件：
 
 ```js
 module.exports = {
