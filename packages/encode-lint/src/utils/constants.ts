@@ -16,6 +16,12 @@ export enum UNICODE {
  */
 export const PKG_NAME: string = pkg.name;
 
+
+/**
+ * 可执行命令name
+ */
+export const EXEC_NAME: string = 'encode-lint';
+
 /**
  * 包版本号
  */

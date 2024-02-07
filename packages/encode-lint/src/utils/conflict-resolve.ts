@@ -3,7 +3,7 @@ import fs from 'fs-extra';
 import glob from 'glob';
 import inquirer from 'inquirer';
 import log from './log';
-import { PKG_NAME } from './constants';
+import { EXEC_NAME } from './constants';
 import type { PKG } from '../types';
 
 // 精确移除依赖
@@ -75,7 +75,7 @@ export default async (cwd: string, rewriteConfig?: boolean) => {
 
   // 提示是否移除原配置
   if (willChangeCount > 0) {
-    log.warn(`检测到项目中存在可能与 ${PKG_NAME} 冲突的依赖和配置，为保证正常运行将`);
+    log.warn(`检测到项目中存在可能与 ${EXEC_NAME} 冲突的依赖和配置，为保证正常运行将`);
 
     if (willRemovePackage.length > 0) {
       log.warn('删除以下依赖：');

@@ -1,8 +1,8 @@
 {
   "name": "@encodefe/markdownlint-config",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "front-end encode markdownlint config",
-  "main": "index.js",
+  "main": "index.json",
   "keywords": [
     "front-end",
     "encode",
@@ -21,12 +21,8 @@
     "url": "https://github.com/BrookZhao/frontend-spec/issues"
   },
   "peerDependencies": {
-    "markdownlint": "^0.33.0"
+    "markdownlint": "^0.28.1"
   },
-  "dependencies": {
-    "markdownlint": "^0.33.0"
-  },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

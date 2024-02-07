@@ -1,7 +1,7 @@
 import ora from 'ora';
 import scanAction from './actions/scan';
 import initAction from './actions/init';
-import { PKG_NAME } from './utils/constants';
+import { EXEC_NAME } from './utils/constants';
 import printReport from './utils/print-report';
 import type { InitOptions, ScanOptions } from './types';
 
@@ -16,7 +16,7 @@ export const init = async (options: IInitOptions) => {
 
 export const scan = async (options: ScanOptions) => {
   const checking = ora();
-  checking.start(`执行 ${PKG_NAME} 代码检查`);
+  checking.start(`执行 ${EXEC_NAME} 代码检查`);
 
   const report = await scanAction(options);
   const { results, errorCount, warningCount } = report;

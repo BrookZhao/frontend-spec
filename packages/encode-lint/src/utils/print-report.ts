@@ -3,7 +3,7 @@ import table from 'text-table';
 import terminalLink from 'terminal-link';
 import isDocker from 'is-docker';
 import stripAnsi from 'strip-ansi';
-import { PKG_NAME, UNICODE } from './constants';
+import { EXEC_NAME, UNICODE } from './constants';
 import type { ScanResult } from '../types';
 
 /**
@@ -91,7 +91,7 @@ export default (results: ScanResult[], fix: boolean): void => {
           ' and ',
           fixableWarningCount,
           pluralize(' warning', fixableWarningCount),
-          ` potentially fixable with the \`${PKG_NAME} fix\``,
+          ` potentially fixable with the \`${EXEC_NAME} fix\``,
         ].join(''),
       );
     }

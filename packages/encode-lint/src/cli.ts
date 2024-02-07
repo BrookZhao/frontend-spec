@@ -14,7 +14,7 @@ import printReport from './utils/print-report';
 import npmType from './utils/npm-type';
 import { getCommitFiles, getAmendFiles } from './utils/git';
 import generateTemplate from './utils/generate-template';
-import { PKG_NAME, PKG_VERSION } from './utils/constants';
+import { EXEC_NAME, PKG_VERSION } from './utils/constants';
 
 const cwd = process.cwd();
 
@@ -39,7 +39,7 @@ const installDepsIfThereNo = async () => {
 program
   .version(PKG_VERSION)
   .description(
-    `${PKG_NAME} 是 Front-end前端编码规范工程化 的配套 Lint 工具，提供简单的 CLI 和 Node.js API，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡点，降低项目实施规范的成本`,
+    `${EXEC_NAME} 是前端编码规范工程化的配套 Lint 工具，提供简单的 CLI 和 Node.js API，让项目能够一键接入、一键扫描、一键修复、一键升级，并为项目配置 git commit 卡点，降低项目实施规范的成本`,
   );
 
 program
@@ -48,7 +48,7 @@ program
   .option('--vscode', '写入.vscode/setting.json配置')
   .action(async (cmd) => {
     if (cmd.vscode) {
-      const configPath = path.resolve(cwd, `${PKG_NAME}.config.js`);
+      const configPath = path.resolve(cwd, `${EXEC_NAME}.config.js`);
       generateTemplate(cwd, require(configPath), true);
     } else {
       await init({
@@ -69,7 +69,7 @@ program
     await installDepsIfThereNo();
 
     const checking = ora();
-    checking.start(`执行 ${PKG_NAME} 代码检查`);
+    checking.start(`执行 ${EXEC_NAME} 代码检查`);
 
     const { results, errorCount, warningCount, runErrors } = await scan({
       cwd,
@@ -113,10 +113,10 @@ program
 
     // git add 检查
     const files = await getAmendFiles();
-    if (files) log.warn(`[${PKG_NAME}] changes not staged for commit: \n${files}\n`);
+    if (files) log.warn(`[${EXEC_NAME}] changes not staged for commit: \n${files}\n`);
 
     const checking = ora();
-    checking.start(`执行 ${PKG_NAME} 代码提交检查`);
+    checking.start(`执行 ${EXEC_NAME} 代码提交检查`);
 
     const { results, errorCount, warningCount } = await scan({
       cwd,
@@ -143,7 +143,7 @@ program
     await installDepsIfThereNo();
 
     const checking = ora();
-    checking.start(`执行 ${PKG_NAME} 代码修复`);
+    checking.start(`执行 ${EXEC_NAME} 代码修复`);
 
     const { results } = await scan({
       cwd,
@@ -158,7 +158,7 @@ program
 
 program
   .command('update')
-  .description(`更新 ${PKG_NAME} 至最新版本`)
+  .description(`更新 ${EXEC_NAME} 至最新版本`)
   .action(() => update(true));
 
 program.parse(process.argv);

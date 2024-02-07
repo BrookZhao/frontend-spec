@@ -7,7 +7,7 @@ import npmType from '../utils/npm-type';
 import log from '../utils/log';
 import conflictResolve from '../utils/conflict-resolve';
 import generateTemplate from '../utils/generate-template';
-import { PROJECT_TYPES, PKG_NAME } from '../utils/constants';
+import { PROJECT_TYPES, EXEC_NAME } from '../utils/constants';
 import type { InitOptions, PKG } from '../types';
 
 let step = 0;
@@ -126,7 +126,7 @@ export default async (options: InitOptions) => {
     if (!disableNpmInstall) {
       log.info(`Step ${++step}. 安装依赖`);
       const npm = await npmType;
-      spawn.sync(npm, ['i', '-D', PKG_NAME], { stdio: 'inherit', cwd });
+      spawn.sync(npm, ['i', '-D', EXEC_NAME], { stdio: 'inherit', cwd });
       log.success(`Step ${step}. 安装依赖成功 :D`);
     }
   }
@@ -137,19 +137,19 @@ export default async (options: InitOptions) => {
   if (!pkg.scripts) {
     pkg.scripts = {};
   }
-  if (!pkg.scripts[`${PKG_NAME}-scan`]) {
-    pkg.scripts[`${PKG_NAME}-scan`] = `${PKG_NAME} scan`;
+  if (!pkg.scripts[`${EXEC_NAME}-scan`]) {
+    pkg.scripts[`${EXEC_NAME}-scan`] = `${EXEC_NAME} scan`;
   }
-  if (!pkg.scripts[`${PKG_NAME}-fix`]) {
-    pkg.scripts[`${PKG_NAME}-fix`] = `${PKG_NAME} fix`;
+  if (!pkg.scripts[`${EXEC_NAME}-fix`]) {
+    pkg.scripts[`${EXEC_NAME}-fix`] = `${EXEC_NAME} fix`;
   }
 
   // 配置 commit 卡点
   log.info(`Step ${++step}. 配置 git commit 卡点`);
   if (!pkg.husky) pkg.husky = {};
   if (!pkg.husky.hooks) pkg.husky.hooks = {};
-  pkg.husky.hooks['pre-commit'] = `${PKG_NAME} commit-file-scan`;
-  pkg.husky.hooks['commit-msg'] = `${PKG_NAME} commit-msg-scan`;
+  pkg.husky.hooks['pre-commit'] = `${EXEC_NAME} commit-file-scan`;
+  pkg.husky.hooks['commit-msg'] = `${EXEC_NAME} commit-msg-scan`;
   fs.writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
   log.success(`Step ${step}. 配置 git commit 卡点成功 :D`);
 
@@ -158,6 +158,6 @@ export default async (options: InitOptions) => {
   log.success(`Step ${step}. 写入配置文件成功 :D`);
 
   // 完成信息
-  const logs = [`${PKG_NAME} 初始化完成 :D`].join('\r\n');
+  const logs = [`${EXEC_NAME} 初始化完成 :D`].join('\r\n');
   log.success(logs);
 };

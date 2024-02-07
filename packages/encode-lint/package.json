@@ -1,6 +1,6 @@
 {
   "name": "@encodefe/encode-lint",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "frontend encode engineering cli",
   "bin": {
     "encode-lint": "lib/cli.js"

@@ -2,14 +2,14 @@ import { execSync } from 'child_process';
 import ora from 'ora';
 import log from '../utils/log';
 import npmType from '../utils/npm-type';
-import { PKG_NAME, PKG_VERSION } from '../utils/constants';
+import { EXEC_NAME, PKG_NAME, PKG_VERSION } from '../utils/constants';
 
 /**
  * 检查最新版本号
  */
 const checkLatestVersion = async (): Promise<string | null> => {
   const npm = await npmType;
-  const latestVersion = execSync(`${npm} view ${PKG_NAME} version`).toString('utf-8').trim();
+  const latestVersion = execSync(`${npm} view ${EXEC_NAME} version`).toString('utf-8').trim();
 
   if (PKG_VERSION === latestVersion) return null;
 
@@ -31,7 +31,7 @@ const checkLatestVersion = async (): Promise<string | null> => {
  * @param install - 自动安装最新包
  */
 export default async (install = true) => {
-  const checking = ora(`[${PKG_NAME}] 正在检查最新版本...`);
+  const checking = ora(`[${EXEC_NAME}] 正在检查最新版本...`);
   checking.start();
 
   try {
@@ -40,7 +40,7 @@ export default async (install = true) => {
     checking.stop();
 
     if (latestVersion && install) {
-      const update = ora(`[${PKG_NAME}] 存在新版本，将升级至 ${latestVersion}`);
+      const update = ora(`[${EXEC_NAME}] 存在新版本，将升级至 ${latestVersion}`);
 
       update.start();
 
